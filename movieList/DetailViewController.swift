@@ -52,6 +52,13 @@ class DetailViewController:UIViewController {
         
     }
     
+    @IBAction func movieStartBttn1(_ sender: Any) {
+        
+    }
+    @IBAction func movieStartBttn2(_ sender: Any) {
+    }
+    
+    
     func loadWebView(){
         
             let storyBoard = UIStoryboard(name:"Main", bundle: nil)

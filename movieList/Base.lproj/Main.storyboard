@@ -201,6 +201,9 @@
                                         <rect key="frame" x="163" y="113" width="118" height="75"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="6127266_multimedia_music_play_player_song_icon-3" title=""/>
+                                        <connections>
+                                            <action selector="movieStartBttn2:" destination="6jB-JK-LMg" eventType="touchUpInside" id="8AE-sp-SLi"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -298,6 +301,9 @@
                                 <color key="tintColor" red="0.34320362609999999" green="0.37140355130000002" blue="0.78328366620000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title=" Play Now"/>
+                                <connections>
+                                    <action selector="movieStartBttn1:" destination="6jB-JK-LMg" eventType="touchUpInside" id="YcL-Q1-sdC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2vd-0j-bCy"/>
