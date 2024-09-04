@@ -18,6 +18,8 @@
 		3D3A6F442C64B74D00A3DCB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A6F432C64B74D00A3DCB9 /* Assets.xcassets */; };
 		3D3A6F472C64B74D00A3DCB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3A6F452C64B74D00A3DCB9 /* LaunchScreen.storyboard */; };
 		3D3A6F6F2C7493E800A3DCB9 /* MovieListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3A6F6E2C7493E800A3DCB9 /* MovieListModel.swift */; };
+		3DB1B1A42C88404B005557C8 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1B1A32C88404B005557C8 /* ListViewController.swift */; };
+		3DB1B1A62C887A94005557C8 /* MovieTwoColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB1B1A52C887A94005557C8 /* MovieTwoColumnCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		3D3A6F462C64B74D00A3DCB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D3A6F482C64B74D00A3DCB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D3A6F6E2C7493E800A3DCB9 /* MovieListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListModel.swift; sourceTree = "<group>"; };
+		3DB1B1A32C88404B005557C8 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3DB1B1A52C887A94005557C8 /* MovieTwoColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTwoColumnCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				3D221C2E2C7DF099002EA4CA /* trendingMoviesResponseModel.swift */,
 				3D221C2A2C75DD64002EA4CA /* DetailViewController.swift */,
 				3D3A6F402C64B74C00A3DCB9 /* Main.storyboard */,
+				3DB1B1A32C88404B005557C8 /* ListViewController.swift */,
+				3DB1B1A52C887A94005557C8 /* MovieTwoColumnCell.swift */,
 				3D221C2C2C772D48002EA4CA /* WebViewController.swift */,
 				3D221C282C74BC75002EA4CA /* movieCollectionViewCell.swift */,
 				3D3A6F432C64B74D00A3DCB9 /* Assets.xcassets */,
@@ -158,7 +164,9 @@
 				3D3A6F3B2C64B74C00A3DCB9 /* AppDelegate.swift in Sources */,
 				3D221C2B2C75DD64002EA4CA /* DetailViewController.swift in Sources */,
 				3D221C2D2C772D48002EA4CA /* WebViewController.swift in Sources */,
+				3DB1B1A42C88404B005557C8 /* ListViewController.swift in Sources */,
 				3D3A6F3D2C64B74C00A3DCB9 /* SceneDelegate.swift in Sources */,
+				3DB1B1A62C887A94005557C8 /* MovieTwoColumnCell.swift in Sources */,
 				3D221C2F2C7DF099002EA4CA /* trendingMoviesResponseModel.swift in Sources */,
 				3D221C292C74BC75002EA4CA /* movieCollectionViewCell.swift in Sources */,
 			);

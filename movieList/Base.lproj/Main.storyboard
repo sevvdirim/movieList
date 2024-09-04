@@ -135,7 +135,7 @@
         <!--List-->
         <scene sceneID="zWm-O6-doD">
             <objects>
-                <viewController id="2Yp-Yq-IIt" sceneMemberID="viewController">
+                <viewController id="2Yp-Yq-IIt" customClass="ListViewController" customModule="movieList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z5A-v7-ekt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -162,10 +162,62 @@
                                     <segment title="Fourth"/>
                                 </segments>
                             </segmentedControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sya-3B-Rc2">
+                                <rect key="frame" x="20" y="177" width="374" height="620"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="620" id="FRw-eg-qWS"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D1S-di-6KM">
+                                    <size key="itemSize" width="222" height="373"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCollectionCell" id="hxd-fI-nwF" customClass="MovieTwoColumnCell" customModule="movieList" customModuleProvider="target">
+                                        <rect key="frame" x="76" y="0.0" width="222" height="373"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MX2-LB-hkS">
+                                            <rect key="frame" x="0.0" y="0.0" width="222" height="373"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4k-uf-lcr">
+                                                    <rect key="frame" x="-9" y="17" width="231" height="278"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-DJ-sOn">
+                                                    <rect key="frame" x="8" y="320" width="50" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azc-sj-Feu">
+                                                    <rect key="frame" x="147" y="320" width="50" height="26"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="222" height="373"/>
+                                        <connections>
+                                            <outlet property="movieİmage" destination="p4k-uf-lcr" id="RZH-Ps-Nfu"/>
+                                            <outlet property="movieName" destination="dbx-DJ-sOn" id="ke0-wn-rMe"/>
+                                            <outlet property="movieYear" destination="azc-sj-Feu" id="goH-dX-Hxg"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Tx1-my-nXj"/>
                         <color key="backgroundColor" red="0.086274509803921567" green="0.074509803921568626" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="sya-3B-Rc2" firstAttribute="leading" secondItem="Tx1-my-nXj" secondAttribute="leading" constant="20" id="3px-56-VPa"/>
+                            <constraint firstItem="Tx1-my-nXj" firstAttribute="trailing" secondItem="sya-3B-Rc2" secondAttribute="trailing" constant="20" id="5Lz-cQ-3sY"/>
+                            <constraint firstItem="sya-3B-Rc2" firstAttribute="top" secondItem="Tx1-my-nXj" secondAttribute="top" constant="85" id="G77-kT-cs5"/>
                             <constraint firstItem="uh1-m1-7hq" firstAttribute="leading" secondItem="z5A-v7-ekt" secondAttribute="leadingMargin" id="Jg4-7I-2EU"/>
                             <constraint firstItem="Tx1-my-nXj" firstAttribute="trailing" secondItem="zqq-l7-Otw" secondAttribute="trailing" constant="20" id="PNn-N4-V2j"/>
                             <constraint firstItem="Tx1-my-nXj" firstAttribute="trailing" secondItem="Zdw-rs-aSs" secondAttribute="trailing" constant="270" id="RzF-kS-QgQ"/>
@@ -177,6 +229,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="List" image="list.bullet.clipboard" catalog="system" selectedImage="list.bullet.clipboard.fill" id="CkT-B2-LLS"/>
+                    <connections>
+                        <outlet property="myCollectionView" destination="sya-3B-Rc2" id="aCW-CO-FSL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGp-pv-6HO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -280,7 +335,7 @@
                                     <constraint firstAttribute="width" constant="370" id="Wgw-HU-Nqb"/>
                                     <constraint firstAttribute="height" constant="128" id="jef-sX-YVq"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" red="0.70511844599999995" green="0.63910913759999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
