@@ -162,47 +162,45 @@
                                     <segment title="Fourth"/>
                                 </segments>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sya-3B-Rc2">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sya-3B-Rc2">
                                 <rect key="frame" x="20" y="177" width="374" height="620"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="620" id="FRw-eg-qWS"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="D1S-di-6KM">
-                                    <size key="itemSize" width="222" height="373"/>
+                                    <size key="itemSize" width="136" height="329"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCollectionCell" id="hxd-fI-nwF" customClass="MovieTwoColumnCell" customModule="movieList" customModuleProvider="target">
-                                        <rect key="frame" x="76" y="0.0" width="222" height="373"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" reuseIdentifier="myCollectionCell" id="hxd-fI-nwF" customClass="MovieTwoColumnCell" customModule="movieList" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="136" height="329"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="MX2-LB-hkS">
-                                            <rect key="frame" x="0.0" y="0.0" width="222" height="373"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="136" height="329"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p4k-uf-lcr">
-                                                    <rect key="frame" x="-9" y="17" width="231" height="278"/>
+                                                    <rect key="frame" x="8" y="23" width="120" height="231"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbx-DJ-sOn">
-                                                    <rect key="frame" x="8" y="320" width="50" height="26"/>
+                                                    <rect key="frame" x="8" y="254" width="171" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.5411764979" green="0.49019610879999997" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azc-sj-Feu">
-                                                    <rect key="frame" x="147" y="320" width="50" height="26"/>
+                                                    <rect key="frame" x="8" y="288" width="50" height="26"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.5411764979" green="0.49019610879999997" blue="0.73333334920000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="222" height="373"/>
+                                        <size key="customSize" width="136" height="329"/>
                                         <connections>
                                             <outlet property="movieİmage" destination="p4k-uf-lcr" id="RZH-Ps-Nfu"/>
                                             <outlet property="movieName" destination="dbx-DJ-sOn" id="ke0-wn-rMe"/>
@@ -215,9 +213,6 @@
                         <viewLayoutGuide key="safeArea" id="Tx1-my-nXj"/>
                         <color key="backgroundColor" red="0.086274509803921567" green="0.074509803921568626" blue="0.12156862745098039" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="sya-3B-Rc2" firstAttribute="leading" secondItem="Tx1-my-nXj" secondAttribute="leading" constant="20" id="3px-56-VPa"/>
-                            <constraint firstItem="Tx1-my-nXj" firstAttribute="trailing" secondItem="sya-3B-Rc2" secondAttribute="trailing" constant="20" id="5Lz-cQ-3sY"/>
-                            <constraint firstItem="sya-3B-Rc2" firstAttribute="top" secondItem="Tx1-my-nXj" secondAttribute="top" constant="85" id="G77-kT-cs5"/>
                             <constraint firstItem="uh1-m1-7hq" firstAttribute="leading" secondItem="z5A-v7-ekt" secondAttribute="leadingMargin" id="Jg4-7I-2EU"/>
                             <constraint firstItem="Tx1-my-nXj" firstAttribute="trailing" secondItem="zqq-l7-Otw" secondAttribute="trailing" constant="20" id="PNn-N4-V2j"/>
                             <constraint firstItem="Tx1-my-nXj" firstAttribute="trailing" secondItem="Zdw-rs-aSs" secondAttribute="trailing" constant="270" id="RzF-kS-QgQ"/>
